@@ -206,6 +206,10 @@
   color: #23262F;
 }
 
+.front-content-section {
+  margin-top: 128px;
+}
+
 .front-content__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,10 +217,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .front-content__row_img {
-  width: 640px;
   position: relative;
+}
+.front-content__row_img img {
+  width: 646px;
 }
 .front-content__img_audio {
   position: absolute;
@@ -225,4 +233,279 @@
 }
 .front-content__img_audio audio {
   width: 624px;
+}
+.front-content__content_name h1 {
+  max-width: 352px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #23262F;
+}
+.front-content__content_description {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.front-content__content_btn-place {
+  margin-top: 40px;
+}
+.front-content__content_btn-place a {
+  display: inline-block;
+  padding: 16px 133px;
+  background: #3772FF;
+  border-radius: 90px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FCFCFD;
+}
+.front-content__content_btn-view {
+  margin-top: 8px;
+}
+.front-content__content_btn-view a {
+  display: inline-block;
+  padding: 16px 137px;
+  border-radius: 90px;
+  border: 2px solid #E6E8EC;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #23262F;
+}
+.front-content__description_creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 65px;
+}
+.front-content__description_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.front-content__creator_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 8px;
+}
+.front-content__creator_title h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777E91;
+}
+.front-content__creator_title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23262F;
+}
+.front-content__price_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 8px;
+}
+.front-content__price_title h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777E91;
+}
+.front-content__price_title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23262F;
+}
+.front-content__arrows {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.front-content__arrows a img {
+  padding: 15px 15px 15px 13px;
+  display: inline-block;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 40px;
+}
+.front-content__arrows_next {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.front-content__arrows_next a img {
+  padding: 15px 13px 15px 13px;
+  display: inline-block;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 40px;
+  border: 2px solid #E6E8EC;
+}
+
+.auction-card {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 32px 80px;
+  border: 2px solid #E6E8EC;
+  /* depth/4 */
+  -webkit-box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+          box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+  border-radius: 24px;
+}
+.auction-card__header h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #23262F;
+  line-height: 24px;
+}
+.auction-card__price p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #141416;
+  letter-spacing: -0.02em;
+}
+.auction-card__subprice p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #777E91;
+  line-height: 32px;
+}
+.auction-card__timer {
+  max-width: 231px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.auction-card__timer_header h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #23262F;
+}
+.auction-card__timer_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hrs__number {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* Neutrals/1 */
+  color: #141416;
+}
+.hrs__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Neutrals/4 */
+  color: #777E91;
+}
+
+.mins__number {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* Neutrals/1 */
+  color: #141416;
+}
+.mins__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Neutrals/4 */
+  color: #777E91;
+}
+
+.secs__number {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* Neutrals/1 */
+  color: #141416;
+}
+.secs__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Neutrals/4 */
+  color: #777E91;
 }

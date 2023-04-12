@@ -299,46 +299,27 @@
 
 // front-content start
 
-.front-block {
 
-    // .front-block__section
-
-    &__section {}
-
-    // .front-block__row
-
-    &__row {
-
-        // .front-block__row_subtitle
-
-        &_subtitle {}
-
-        // .front-block__row_title
-
-        &_title {}
-
-        // .front-block__row_btn
-
-        &_btn {}
-    }
+.front-content-section {
+    margin-top: 128px;
 }
 
-
-
-.front-content-section {}
-
 .front-content {
+
 
     // .front-content__row
 
     &__row {
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         // .front-content__row_img
 
         &_img {
-            width: 640px;
+            img {
+                width: 646px;
+            }
+
             position: relative;
         }
 
@@ -375,19 +356,69 @@
 
         // .front-content__content_name
 
-        &_name {}
+        &_name {
+            h1 {
+                max-width: 352px;
+
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 64px;
+                color: #23262F;
+            }
+        }
 
         // .front-content__content_description
 
-        &_description {}
+        &_description {
+            margin-top: 22px;
+            display: flex;
+
+        }
 
         // .front-content__content_btn-place
 
-        &_btn-place {}
+        &_btn-place {
+            margin-top: 40px;
+
+            a {
+                display: inline-block;
+                // btn style
+                padding: 16px 133px;
+                background: #3772FF;
+                border-radius: 90px;
+                // text style
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #FCFCFD;
+            }
+        }
 
         // .front-content__content_btn-view
 
-        &_btn-view {}
+        &_btn-view {
+            margin-top: 8px;
+
+            a {
+                display: inline-block;
+                // btn style
+                padding: 16px 137px;
+                border-radius: 90px;
+                border: 2px solid #E6E8EC;
+                // text style
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #23262F;
+
+            }
+        }
     }
 
     // .front-content__description
@@ -396,11 +427,16 @@
 
         // .front-content__description_creator
 
-        &_creator {}
+        &_creator {
+            display: flex;
+            margin-right: 65px;
+        }
 
         // .front-content__description_price
 
-        &_price {}
+        &_price {
+            display: flex;
+        }
     }
 
     // .front-content__creator
@@ -413,7 +449,32 @@
 
         // .front-content__creator_title
 
-        &_title {}
+        &_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 8px;
+
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+
+            }
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #23262F;
+
+            }
+        }
     }
 
     // .front-content__price
@@ -426,93 +487,287 @@
 
         // .front-content__price_title
 
-        &_title {}
+        &_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 8px;
+
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+
+            }
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #23262F;
+
+            }
+        }
     }
 
     // .front-content__arrows
 
     &__arrows {
-
+        margin-top: 40px;
+        display: flex;
         // .front-content__arrows_prev
 
         &_prev {}
 
+        a {
+
+
+            img {
+                padding: 15px 15px 15px 13px;
+                display: inline-block;
+                max-width: 40px;
+                max-height: 40px;
+
+                border-radius: 40px;
+
+
+            }
+        }
+
         // .front-content__arrows_next
 
-        &_next {}
+        &_next {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 40px;
+
+            a {
+                img {
+                    padding: 15px 13px 15px 13px;
+                    display: inline-block;
+                    max-width: 40px;
+                    max-height: 40px;
+
+                    border-radius: 40px;
+
+
+                    border: 2px solid #E6E8EC;
+
+                }
+            }
+        }
     }
 }
 
 .auction-card {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 32px 80px;
+    border: 2px solid #E6E8EC;
+    /* depth/4 */
+
+    box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+    border-radius: 24px;
 
     // .auction-card__header
 
-    &__header {}
+    &__header {
+        h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #23262F;
+            line-height: 24px;
+        }
+    }
 
     // .auction-card__price
 
-    &__price {}
+    &__price {
+        p {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            color: #141416;
+            letter-spacing: -0.02em;
+
+        }
+    }
 
     // .auction-card__subprice
 
-    &__subprice {}
+    &__subprice {
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #777E91;
+            line-height: 32px;
+        }
+    }
 
     // .auction-card__timer
 
     &__timer {
+        max-width: 231px;
+
+        &_header {
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #23262F;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
 
         // .auction-card__timer_hrs
 
-        &_hrs {}
+        &_row {
+            display: flex;
+            justify-content: space-between;
 
-        // .auction-card__timer_mins
+            &_hrs {}
 
-        &_mins {}
+            // .auction-card__timer_mins
 
-        // .auction-card__timer_secs
+            &_mins {}
 
-        &_secs {}
+            // .auction-card__timer_secs
+
+            &_secs {}
+        }
     }
 
-    // .auction-card__time
-
-    &__time {
-
-        // .auction-card__time_header
-
-        &_header {}
-    }
 }
 
 .hrs {
 
     // .hrs__number
 
-    &__number {}
+    &__number {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height, or 125% */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+
+        /* Neutrals/1 */
+
+        color: #141416;
+
+    }
 
     // .hrs__title
 
-    &__title {}
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Neutrals/4 */
+
+        color: #777E91;
+    }
 }
 
 .mins {
 
     // .mins__number
 
-    &__number {}
+    &__number {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height, or 125% */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+
+        /* Neutrals/1 */
+
+        color: #141416;
+    }
 
     // .mins__title
 
-    &__title {}
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Neutrals/4 */
+
+        color: #777E91;
+    }
 }
 
 .secs {
 
     // .secs__number
 
-    &__number {}
+    &__number {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height, or 125% */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+
+        /* Neutrals/1 */
+
+        color: #141416;
+    }
 
     // .secs__title
 
-    &__title {}
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Neutrals/4 */
+
+        color: #777E91;
+    }
 }
