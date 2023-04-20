@@ -661,15 +661,15 @@
             display: flex;
             justify-content: space-between;
 
-            &_hrs {}
+            // &_hrs {}
 
-            // .auction-card__timer_mins
+            // // .auction-card__timer_mins
 
-            &_mins {}
+            // &_mins {}
 
-            // .auction-card__timer_secs
+            // // .auction-card__timer_secs
 
-            &_secs {}
+            // &_secs {}
         }
     }
 
@@ -816,7 +816,7 @@
 
     &__slider {
 
-        &_main-card {}
+        // &_main-card {}
 
         &_all-users {
             margin-left: 24px;
@@ -911,7 +911,7 @@
 
     &__user {
 
-        &_img {}
+        // &_img {}
 
         &_info {
             margin-left: 24px;
@@ -1028,7 +1028,7 @@
             }
         }
 
-        &_columns {}
+        // &_columns {}
 
         &_column {
             display: flex;
@@ -1103,4 +1103,321 @@
     font-size: 12px;
     line-height: 20px;
     color: #777E91;
+}
+
+// place-row finish
+
+// ===================================
+
+// sellsers start
+
+.sellers {
+    padding: 128px 0px;
+    background: #F4F5F6;
+
+    // .sellers__header
+
+    &__header {
+
+        // .sellers__header_row
+
+        &_row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    // .sellers__headers
+
+    &__headers {
+
+        // .sellers__headers_title
+
+        &_title {
+            h2 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: #777E91;
+            }
+        }
+
+        // .sellers__headers_discription
+
+        &_discription {
+            a {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                color: #23262F;
+            }
+        }
+    }
+
+    // .sellers__dropdown
+
+    // &__dropdown {}
+
+    // .sellers__slider
+
+    &__slider {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        // .sellers__slider_item
+
+        &_item {
+            margin: 0px 32px;
+            max-width: 198.4px;
+            max-height: 227px;
+            background: #FCFCFD;
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            box-shadow: none;
+            margin-bottom: 100px;
+
+            &:hover {
+                max-height: 247px;
+                padding-bottom: 64px;
+                box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.295);
+            }
+        }
+    }
+}
+
+
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+    padding: 12px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: #FCFCFD;
+    border: 2px solid #E6E8EC;
+    border-radius: 12px;
+    color: #23262F;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    right: 0px;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 250px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: #FCFCFD;
+    border: 2px solid #E6E8EC;
+    border-radius: 12px;
+    color: #23262F;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+// /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+// .dropdown:hover .dropbtn {}
+
+.slider {
+
+    // .slider__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        // .slider__item_top
+
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #E6E8EC;
+            margin-bottom: 24px;
+
+        }
+
+        // .slider__item_bottom
+
+        &_bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    // .slider__top
+
+    &__top {
+        border-bottom: 1px solid #000;
+        // .slider__top_place
+
+        &_place {
+
+            background: #3772FF;
+            border-radius: 24px;
+            padding: 4px 8px 3px 8px;
+
+            P {
+                display: flex;
+
+                img {
+                    margin-right: 5px;
+                }
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 167% */
+
+
+                /* Neutrals/8 */
+
+                color: #FCFCFD;
+
+            }
+        }
+
+        // .slider__top_add
+
+        // &_add {}
+
+        // // .slider__top_link
+
+        // &_link {}
+    }
+
+    // .slider__bottom
+
+    &__bottom {
+
+        // .slider__bottom_face
+
+        &_face {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        // .slider__bottom_header
+
+        &_header {
+
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 171% */
+
+
+                /* Neutrals/2 */
+
+                color: #23262F;
+
+
+            }
+        }
+
+        // .slider__bottom_price
+
+        &_price {
+            margin-top: 2px;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                color: #353945;
+            }
+        }
+    }
+}
+
+.wrapper_place {
+    display: flex;
+}
+
+.face-diamond {
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+}
+
+
+
+
+
+// sellsers finsih
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    position: absolute !important;
+    top: 130px !important;
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
 }

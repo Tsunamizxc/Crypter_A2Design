@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -458,6 +459,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .hrs__number {
   font-family: "DM Sans";
   font-style: normal;
@@ -785,4 +787,248 @@
   font-size: 12px;
   line-height: 20px;
   color: #777E91;
+}
+
+.sellers {
+  padding: 128px 0px;
+  background: #F4F5F6;
+}
+.sellers__header_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sellers__headers_title h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #777E91;
+}
+.sellers__headers_discription a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #23262F;
+}
+.sellers__slider {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sellers__slider_item {
+  margin: 0px 32px;
+  max-width: 198.4px;
+  max-height: 227px;
+  background: #FCFCFD;
+  border-radius: 16px;
+  padding: 24px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 100px;
+}
+.sellers__slider_item:hover {
+  max-height: 247px;
+  padding-bottom: 64px;
+  -webkit-box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.295);
+          box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.295);
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 256px;
+  padding: 12px 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+  border-radius: 12px;
+  color: #23262F;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  right: 0px;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 250px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+  border-radius: 12px;
+  color: #23262F;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider__item_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E6E8EC;
+  margin-bottom: 24px;
+}
+.slider__item_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider__top {
+  border-bottom: 1px solid #000;
+}
+.slider__top_place {
+  background: #3772FF;
+  border-radius: 24px;
+  padding: 4px 8px 3px 8px;
+}
+.slider__top_place P {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  /* Neutrals/8 */
+  color: #FCFCFD;
+}
+.slider__top_place P img {
+  margin-right: 5px;
+}
+.slider__bottom_face {
+  position: relative;
+  margin-bottom: 24px;
+}
+.slider__bottom_header h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Neutrals/2 */
+  color: #23262F;
+}
+.slider__bottom_price {
+  margin-top: 2px;
+}
+.slider__bottom_price p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #353945;
+}
+
+.wrapper_place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.face-diamond {
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute !important;
+  top: 130px !important;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
 }
