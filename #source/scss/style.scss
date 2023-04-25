@@ -1388,12 +1388,6 @@
     right: 0px;
 }
 
-
-
-
-
-// sellsers finsih
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -1421,3 +1415,331 @@
     outline: none;
     background: transparent;
 }
+
+/* Arrows */
+// sellsers finsih
+// hot
+
+.hot {
+    padding: 136px 0px;
+    // .hot__header
+
+    &__header {
+
+        // .hot__header_title
+
+        &_title {
+
+            margin-bottom: 64px;
+
+            h2 {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                color: #23262F;
+            }
+        }
+    }
+
+    // .hot__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .hot__item
+
+    &__item {
+        max-width: 256px;
+        display: flex;
+        flex-direction: column;
+        // .hot__item_img
+
+        &_img {
+            margin-bottom: 21px;
+
+            img {
+                border-radius: 16px;
+            }
+        }
+
+        // .hot__item_title
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 6px;
+        }
+
+        // .hot__item_people
+
+        &_people {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 12px;
+        }
+
+        // .hot__item_highest
+
+        &_highest {
+
+            border-top: 1px solid #E6E8EC;
+            padding-top: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    // .hot__title
+
+    &__title {
+
+        // .hot__title_name
+
+        &_name {
+            p {
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #23262F;
+
+            }
+        }
+
+        // .hot__title_price
+
+        &_price {
+            p {
+                padding: 8px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #45B36B;
+                border: 2px solid #45B36B;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    // .hot__people
+
+    &__people {
+
+        // .hot__people_peoples
+
+        &_peoples {
+            position: relative;
+
+            img:nth-child(2) {
+                position: absolute;
+                left: 15px;
+            }
+
+            img:nth-child(3) {
+                position: absolute;
+                left: 30px;
+            }
+        }
+
+        // .hot__people_stoks
+
+        &_stoks {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #353945;
+            }
+        }
+    }
+
+    // .hot__highest
+
+    &__highest {
+
+        // .hot__highest_text
+
+        &_text {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+            }
+        }
+
+        // .hot__highest_fire
+
+        &_fire {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+            }
+        }
+    }
+}
+
+.bold {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #353945;
+}
+
+// hot finish
+// ===============================
+// collection start
+.collection {
+    padding: 128px 0px;
+    background: #F4F5F6;
+    // .collection__header
+
+    &__header {
+
+        // .collection__header_title
+
+        &_title {
+            margin-bottom: 72px;
+
+            h2 {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                color: #23262F;
+            }
+        }
+    }
+
+    // .collection__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        // .collection__row_item
+
+        &_item {
+            max-width: 382px;
+        }
+    }
+
+    // .collection__item
+
+    &__item {
+
+        // .collection__item_slider
+
+        &_slider {}
+
+        // .collection__item_title
+
+        &_title {
+            margin-top: 12px;
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: #23262F;
+            }
+        }
+
+        // .collection__item_people-row
+
+        &_people-row {
+            max-width: 352px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    // .collection__for
+
+    &__for {
+        img {
+            max-width: 352px;
+        }
+    }
+
+    // .collection__nav
+
+    &__nav {
+        max-width: 360px;
+
+        margin-top: 10px;
+
+        img {
+            max-width: 112px;
+
+        }
+    }
+
+    // .collection__people
+
+    &__people {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 12px;
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #353945;
+        }
+    }
+
+    // .collection__items
+
+    &__items {
+        p {
+            border: 2px solid #E6E8EC;
+            border-radius: 4px;
+            padding: 8px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #23262F;
+        }
+    }
+}
+
+// collection finish
