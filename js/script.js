@@ -9,6 +9,7 @@ $('.sellers__slider').slick({
 $('.collection__for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
     arrows: false,
     fade: true,
     asNavFor: '.collection__nav'
@@ -16,6 +17,7 @@ $('.collection__for').slick({
 $('.collection__nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     asNavFor: '.collection__for',
-
+    arrows: false,
 });

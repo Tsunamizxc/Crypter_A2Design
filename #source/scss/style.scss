@@ -1112,6 +1112,7 @@
 // sellsers start
 
 .sellers {
+    margin-top: 126px;
     padding: 128px 0px;
     background: #F4F5F6;
 
@@ -1743,3 +1744,567 @@
 }
 
 // collection finish
+
+// discover start
+.discover {
+    padding-bottom: 128px;
+    // .discover__header
+
+    &__header {
+
+        // .discover__header_title
+
+        &_title {
+            margin-top: 128px;
+            margin-bottom: 90px;
+
+            h3 {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                color: #23262F;
+            }
+        }
+    }
+
+    // .discover__row
+
+    &__row {
+
+        // .discover__row_menu
+
+        &_menu {
+            ul {
+                display: flex;
+                width: 400px;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        font-family: 'DM Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #777E91;
+                    }
+                }
+            }
+        }
+
+        // .discover__row_btn
+
+        &_btn {
+            display: inline-block;
+
+            a {
+                padding: 16px 24px;
+                background: #3772FF;
+                border-radius: 90px;
+
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #FCFCFD;
+
+                img {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    // .discover__items
+
+    &__items {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    // .discover__item
+
+    &__item {
+        max-width: 256px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        // .hot__item_img
+
+        &_img {
+            margin-bottom: 21px;
+
+            img {
+                border-radius: 16px;
+            }
+        }
+
+        // .hot__item_title
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 6px;
+        }
+
+        // .hot__item_people
+
+        &_people {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 12px;
+        }
+
+        // .hot__item_highest
+
+        &_highest {
+
+            border-top: 1px solid #E6E8EC;
+            padding-top: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    // .discover__title
+
+    &__title {
+
+        // .hot__title_name
+
+        &_name {
+            p {
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #23262F;
+
+            }
+        }
+
+        // .hot__title_price
+
+        &_price {
+            p {
+                padding: 8px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #45B36B;
+                border: 2px solid #45B36B;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    // .hot__people
+
+    &__people {
+
+        // .hot__people_peoples
+
+        &_peoples {
+            position: relative;
+
+            img:nth-child(2) {
+                position: absolute;
+                left: 15px;
+            }
+
+            img:nth-child(3) {
+                position: absolute;
+                left: 30px;
+            }
+        }
+
+        // .hot__people_stoks
+
+        &_stoks {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #353945;
+            }
+        }
+    }
+
+
+    // .discover__highest
+
+    &__highest {
+
+        // .hot__highest_text
+
+        &_text {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+            }
+        }
+
+        // .hot__highest_fire
+
+        &_fire {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #777E91;
+            }
+        }
+    }
+}
+
+
+
+.discover-menu {
+
+    // .discover-menu__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #E6E8EC;
+
+    }
+}
+
+
+
+
+.discover-filters {
+
+    // .discover-filters__row
+
+    &__row {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // .discover-filters__row_price
+
+        &_price {
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: #B1B5C4;
+                margin-bottom: 12px;
+            }
+        }
+
+        // .discover-filters__row_likes
+
+        &_likes {
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: #B1B5C4;
+                margin-bottom: 12px;
+            }
+        }
+
+        // .discover-filters__row_creators
+
+        &_creators {
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: #B1B5C4;
+                margin-bottom: 12px;
+            }
+        }
+
+        // .discover-filters__row_prange
+
+        &_prange {
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: #B1B5C4;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.btn_discover {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    a {
+
+        text-align: center;
+        padding: 12px 16px;
+        width: 132px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #23262F;
+        border: 2px solid #E6E8EC;
+        border-radius: 90px;
+    }
+}
+
+.eth-row {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #23262F;
+    }
+}
+
+.slider {
+    width: 256px;
+}
+
+// discover dropdown start
+
+.dropbtn-disc {
+    display: flex;
+    justify-content: space-between;
+    width: 186px;
+    padding: 12px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: #FCFCFD;
+    border: 2px solid #E6E8EC;
+    border-radius: 12px;
+    color: #23262F;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content-disc {
+    display: none;
+    right: 0px;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 180px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: #FCFCFD;
+    border: 2px solid #E6E8EC;
+    border-radius: 12px;
+    color: #23262F;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content-disc a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content-disc a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content-disc {
+    display: block;
+}
+
+// discover dropdown finish
+
+
+
+// discover finish
+// -------------------
+// earn start
+
+
+.earn {
+
+    // .earn__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        // .earn__row_content
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        // .earn__row_img
+
+        &_img {
+            width: 640px;
+
+            img {
+                position: absolute;
+            }
+        }
+    }
+
+    // .earn__content
+
+    &__content {
+
+        // .earn__content_discription
+
+        &_discription {
+            margin-bottom: 12px;
+
+            h4 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #777E91;
+            }
+        }
+
+        // .earn__content_title
+
+        &_title {
+            position: relative;
+            height: 128px;
+
+            h2 {
+                left: -0px;
+                position: absolute;
+                width: 545px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 64px;
+                color: #23262F;
+            }
+        }
+
+        // .earn__content_subtitle
+
+        &_subtitle {
+            margin-top: 20px;
+
+            h3 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #777E91;
+            }
+        }
+
+        // .earn__content_btns
+
+        &_btns {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    // .earn__btn
+
+    &__btn {
+
+        // .earn__btn_now
+
+        &_now {
+            a {
+                display: inline-block;
+                padding: 16px 24px;
+                background: #3772FF;
+                border-radius: 90px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #FCFCFD;
+
+            }
+        }
+
+        // .earn__btn_more
+
+        &_more {
+            a {
+                display: inline-block;
+                padding: 16px 24px;
+                border: 2px solid #E6E8EC;
+                border-radius: 90px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #23262F;
+            }
+        }
+    }
+}
+
+
+// earn finish
