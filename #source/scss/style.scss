@@ -312,7 +312,7 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+
         // .front-content__row_img
 
         &_img {
@@ -2487,3 +2487,8 @@
 }
 
 // footer finish
+
+
+@media (min-width: 575px) and (max-width: 1300px) {
+    @import "_1024px";
+}

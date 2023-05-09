@@ -218,8 +218,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .front-content__row_img {
   position: relative;
@@ -1877,4 +1875,145 @@
   font-size: 12px;
   line-height: 20px;
   color: #3772FF;
+}
+
+@media (min-width: 575px) and (max-width: 1300px) {
+  .container {
+    max-width: 864px;
+    margin: 0 auto;
+  }
+  .header__row_menu {
+    display: none;
+  }
+  .front-content__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .front-content__row_content {
+    max-width: 304px;
+  }
+  .front-content__img_picture img {
+    width: 528px;
+    height: 973px;
+  }
+  .front-content__img_audio {
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+  }
+  .front-content__img_audio audio {
+    width: 504px;
+  }
+  .front-content__content_name h1 {
+    max-width: 304px;
+  }
+  .front-content__content_btn-place a {
+    display: inline-block;
+    padding: 16px 109px;
+    background: #3772FF;
+    border-radius: 90px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FCFCFD;
+  }
+  .front-content__content_btn-view a {
+    display: inline-block;
+    padding: 16px 109px;
+    border-radius: 90px;
+    border: 2px solid #E6E8EC;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #23262F;
+  }
+  .front-content__description_creator {
+    margin-right: 35px;
+  }
+  .auction-card {
+    text-align: center;
+    padding: 32px 36px;
+  }
+  .place-row__creators {
+    display: none;
+  }
+  .earn__row_img img {
+    width: 416px;
+    right: 40px;
+  }
+  .earn__content_title {
+    height: 192px;
+  }
+  .earn__content_title h2 {
+    width: 416px;
+  }
+  .sellers {
+    margin-top: 126px;
+    padding: 128px 0px;
+    background: #F4F5F6;
+  }
+  .sellers__header_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sellers__headers_title h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #777E91;
+  }
+  .sellers__headers_discription a {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #23262F;
+  }
+  .sellers__slider {
+    margin-top: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sellers__slider_item {
+    margin: 0px 16px;
+    max-width: 192px;
+    max-height: 247px;
+    background: #FCFCFD;
+    border-radius: 16px;
+    padding: 24px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 100px;
+  }
+  .sellers__slider_item:hover {
+    max-height: 247px;
+    padding-bottom: 64px;
+    -webkit-box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.295);
+            box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.295);
+  }
+  .dntablet {
+    display: none;
+  }
 }
